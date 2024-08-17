@@ -9,11 +9,14 @@ Soy un apasionado desarrollador backend con experiencia en tecnologías modernas
 - **Pasante Desarrollador Backend** en Kiura (Actualidad)
   - Desarrollando habilidades prácticas en un entorno empresarial real.
   - Trabajando de manera remota para esta empresa colombiana, aplicando y expandiendo mis conocimientos en desarrollo backend.
+  - Desarrollo de soluciones backend para la integración de pasarelas de pago como PayPal.
+  - Implementación de autenticación y registro con Google.
+  - Optimización de la estructura de proyectos y aplicación de patrones de diseño.
 
 - **Desarrollador Backend Freelance** en Upwork (Ago 2023 - Presente)
   - Especializado en soluciones E-commerce usando Node.js, Express.js, Sequelize y PostgreSQL.
   - Implementación de sistemas de autenticación y autorización con Bcrypt y JWT.
-  - Contribución clave en el proyecto AGENDA APP utilizando el stack MERN.
+  -Contribución clave en proyectos como AGENDA APP y JOBMATCH. Utilizando el stack MERN y PERN.
 
 ### 🛠 Habilidades Técnicas
 
@@ -24,6 +27,7 @@ Soy un apasionado desarrollador backend con experiencia en tecnologías modernas
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![Sequelize](https://img.shields.io/badge/-Sequelize-52B0E7?style=flat-square&logo=sequelize&logoColor=white)
 ![Mongoose](https://img.shields.io/badge/-Mongoose-880000?style=flat-square&logo=mongoose&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 #### Frontend:
@@ -35,18 +39,20 @@ Soy un apasionado desarrollador backend con experiencia en tecnologías modernas
 
 ### 🚀 Proyectos Destacados
 
-- **Backend**: Ecommerce Backend, Verification App, Movie API, Music API
+- **Backend**: Ecommerce Backend, Verification App, Movie API, Music API, Number-clap, Jobmatch, Fluiana
 - **Frontend**: Agenda App (FullStack), Quiz Game, Weather App, Responsive Website
 
 ### 🌟 Logros
 
-- Pasantía actual como desarrollador Backend en Kiura, ganando experiencia práctica en un entorno empresarial internacional.
-- Desarrollo exitoso de soluciones robustas para E-commerce como freelancer.
+- Pasantía actual como Desarrollador Backend en Kiura: Ganando experiencia práctica en un entorno empresarial internacional.
+- Desarrollo exitoso de soluciones robustas para E-commerce como freelancer, utilizando tecnologías como Node.js, Express.js, Sequelize y PostgreSQL.
+- Creación de proyectos personales destacados, como una API de películas, una aplicación de verificación, y un backend para una tienda de música, demostrando capacidad para diseñar y       desarrollar aplicaciones completas desde cero.
+- Contribución a proyectos de código abierto, mejorando tus habilidades técnicas y colaborativas en entornos de desarrollo reales.
 
 ### 🌐 Idiomas
 
 - Español: Nativo
-- Inglés: Intermedio (B1)
+- Inglés: Intermedio (B2)
 
 ### 🤝 Habilidades Blandas
 
