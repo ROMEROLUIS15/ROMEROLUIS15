@@ -7,7 +7,7 @@ Soy un apasionado desarrollador backend con experiencia en tecnologías modernas
 ### 💼 Experiencia Profesional
 
 - **Pasante Desarrollador Backend** en Kiura (Actualidad)
-  - Desarrollando habilidades prácticas en un entorno empresarial real.
+  - Ganando experiencia y desarrollando habilidades prácticas en un entorno empresarial real e internacional.
   - Trabajando de manera remota para esta empresa colombiana, aplicando y expandiendo mis conocimientos en desarrollo backend.
   - Desarrollo de soluciones backend para la integración de pasarelas de pago como PayPal.
   - Implementación de autenticación y registro con Google.
