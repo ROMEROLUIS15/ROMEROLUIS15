@@ -6,7 +6,17 @@ Soy un apasionado desarrollador backend con experiencia en tecnologías modernas
 
 ### 💼 Experiencia Profesional
 
-- **Pasante Desarrollador Backend** en Kiura (Actualidad)
+- **Soporte Técnico y Facilitador de Programación en IBIME-MÉRIDA** (Sep 2024 - Actualidad)
+
+  - Mantenimiento y optimización de sistemas operativos para asegurar rendimiento y operatividad de software y hardware.
+  - Guía en cursos de programación, apoyando a estudiantes en el aprendizaje de lenguajes y conceptos tecnológicos.
+  - Estrategias para inspirar y atraer nuevos públicos al ámbito tecnológico.
+  - Digitalización y preservación de medios antiguos, asegurando accesibilidad y modernización.
+  - Implementación del sistema Koha para la gestión integrada de bibliotecas.
+
+Promoción de la tiflotecnología, capacitando a personas con discapacidad visual en el uso de herramientas adaptadas.
+
+- **Pasante Desarrollador Backend** en Kiura
   - Ganando experiencia y desarrollando habilidades prácticas en un entorno empresarial real e internacional.
   - Trabajando de manera remota para esta empresa colombiana, aplicando y expandiendo mis conocimientos en desarrollo backend.
   - Desarrollo de soluciones backend para la integración de pasarelas de pago como PayPal.
