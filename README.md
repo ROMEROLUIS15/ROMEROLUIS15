@@ -13,8 +13,7 @@ Soy un apasionado desarrollador backend con experiencia en tecnologías modernas
   - Estrategias para inspirar y atraer nuevos públicos al ámbito tecnológico.
   - Digitalización y preservación de medios antiguos, asegurando accesibilidad y modernización.
   - Implementación del sistema Koha para la gestión integrada de bibliotecas.
-
-Promoción de la tiflotecnología, capacitando a personas con discapacidad visual en el uso de herramientas adaptadas.
+  - Promoción de la tiflotecnología, capacitando a personas con discapacidad visual en el uso de herramientas adaptadas.
 
 - **Pasante Desarrollador Backend** en Kiura
   - Ganando experiencia y desarrollando habilidades prácticas en un entorno empresarial real e internacional.
