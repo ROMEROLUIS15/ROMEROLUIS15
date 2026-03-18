@@ -1,33 +1,47 @@
-# ¡Hola! 👋 Soy Luis Romero
+# Hi, I'm Luis Romero 👋
 
-## Desarrollador Backend | Estudiante de Ingeniería de Sistemas
+Backend Developer focused on building APIs, authentication systems, and scalable backend solutions.
 
-Soy un apasionado desarrollador backend con experiencia en tecnologías modernas y un fuerte compromiso con el aprendizaje continuo. Actualmente cursando el segundo año de Ingeniería de Sistemas en la Universidad Nacional Abierta, Facultad Regional de Mérida, Venezuela.
+## 🚀 About Me
 
-### 💼 Experiencia Profesional
+I focus on backend development using Node.js, SQL, and serverless technologies.
+Currently working on **IBIME-Connect**, an institutional platform built with Supabase, where I develop backend logic, automation, and real-time features, including AI assistant integration.
 
-- **Soporte Técnico y Facilitador de Programación en IBIME-MÉRIDA** (Sep 2024 - Actualidad)
+I have experience working on real-world applications and freelance projects, building APIs, authentication systems, and backend architectures.
 
-  - Mantenimiento y optimización de sistemas operativos para asegurar rendimiento y operatividad de software y hardware.
-  - Guía en cursos de programación, apoyando a estudiantes en el aprendizaje de lenguajes y conceptos tecnológicos.
-  - Estrategias para inspirar y atraer nuevos públicos al ámbito tecnológico.
-  - Digitalización y preservación de medios antiguos, asegurando accesibilidad y modernización.
-  - Implementación del sistema Koha para la gestión integrada de bibliotecas.
-  - Promoción de la tiflotecnología, capacitando a personas con discapacidad visual en el uso de herramientas adaptadas.
+I work fully remote with a stable setup and availability aligned with global teams.
 
-- **Pasante Desarrollador Backend** en Kiura
-  - Ganando experiencia y desarrollando habilidades prácticas en un entorno empresarial real e internacional.
-  - Trabajando de manera remota para esta empresa colombiana, aplicando y expandiendo mis conocimientos en desarrollo backend.
-  - Desarrollo de soluciones backend para la integración de pasarelas de pago como PayPal.
-  - Implementación de autenticación y registro con Google.
-  - Optimización de la estructura de proyectos y aplicación de patrones de diseño.
+## 💼 Experience
 
-- **Desarrollador Backend Freelance** en Upwork (Ago 2023 - Presente)
-  - Especializado en soluciones E-commerce usando Node.js, Express.js, Sequelize y PostgreSQL.
-  - Implementación de sistemas de autenticación y autorización con Bcrypt y JWT.
-  -Contribución clave en proyectos como AGENDA APP y JOBMATCH. Utilizando el stack MERN y PERN.
+* Backend / Fullstack Developer @ IBIME
+* Backend Developer Intern @ Kiura
+* Freelance Backend Developer (Upwork)
 
-### 🛠 Habilidades Técnicas
+## 🛠 Tech Stack
+
+**Backend:** Node.js, Express, PostgreSQL, MySQL, MongoDB, Supabase
+**Frontend:** React, Tailwind CSS, JavaScript
+**Others:** Docker, JWT, REST APIs, Git, n8n, Serverless Functions, AI integration
+
+## 🔥 Featured Projects
+
+* **IBIME-Connect** – Institutional platform with backend logic, automation, real-time features, and AI integration
+* **CRONIX** – Appointment management system with decoupled architecture
+* **Ecommerce Backend** – REST API for products, users, and orders
+* **Agenda App** – Fullstack appointment system
+
+## 🌍 Languages
+
+Spanish: Native
+English: B1
+
+## 📫 Contact
+
+* LinkedIn: linkedin.com/in/luisromero15/
+* Portfolio: https://portafolio-luis-romero.vercel.app/
+* GitHub: https://github.com/ROMEROLUIS15
+* Email: [lueduar15@gmail.com](mailto:lueduar15@gmail.com)
+
 
 #### Backend:
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=Node.js&logoColor=white)
@@ -45,44 +59,3 @@ Soy un apasionado desarrollador backend con experiencia en tecnologías modernas
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=black)
-
-### 🚀 Proyectos Destacados
-
-- **Backend**: Ecommerce Backend, Verification App, Movie API, Music API, Number-clap, Jobmatch, Fluiana
-- **Frontend**: Agenda App (FullStack), Quiz Game, Weather App, Responsive Website
-
-### 🌟 Logros
-
-- Pasantía actual como Desarrollador Backend en Kiura: Ganando experiencia práctica en un entorno empresarial internacional.
-- Desarrollo exitoso de soluciones robustas para E-commerce como freelancer, utilizando tecnologías como Node.js, Express.js, Sequelize y PostgreSQL.
-- Creación de proyectos personales destacados, como una API de películas, una aplicación de verificación, y un backend para una tienda de música, demostrando capacidad para diseñar y       desarrollar aplicaciones completas desde cero.
-- Contribución a proyectos de código abierto, mejorando tus habilidades técnicas y colaborativas en entornos de desarrollo reales.
-
-### 🌐 Idiomas
-
-- Español: Nativo
-- Inglés: Intermedio (B2)
-
-### 🤝 Habilidades Blandas
-
-- Comunicación efectiva
-- Trabajo en equipo
-- Gestión eficiente del tiempo
-- Adaptabilidad a los cambios
-- Pensamiento crítico
-- Alta responsabilidad
-
-### 📚 Educación
-
-- **Universidad Nacional Abierta**: Ingeniería de Sistemas (En curso)
-- **Academlo**: Desarrollo web FullStack y ciencias de computación (2023)
-
-### 📫 Contáctame
-
-- 💼 [LinkedIn](https://www.linkedin.com/in/luisromero15/)
-- 🌐 [Portafolio](https://portafolio-luis-romero.vercel.app/)
-- 📧 Email: lueduar15@gmail.com
-
----
-
-Soy un desarrollador comprometido con la calidad y la excelencia, siempre buscando nuevas oportunidades para aprender y crecer profesionalmente. Mi experiencia actual como pasante en Kiura me está permitiendo aplicar mis habilidades en un entorno real y expandir mis conocimientos en desarrollo backend. Estoy disponible para colaboraciones y ansioso por contribuir a proyectos desafiantes en el campo del desarrollo web.
