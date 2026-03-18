@@ -37,7 +37,7 @@ English: B1
 
 ## 📫 Contact
 
-* LinkedIn: * LinkedIn: [linkedin.com/in/luisromero15/](https://www.linkedin.com)
+* LinkedIn: [luisromero15](https://www.linkedin.com/in/luisromero15/)
 * Portfolio: https://portafolio-luis-romero.vercel.app/
 * GitHub: https://github.com/ROMEROLUIS15
 * Email: [lueduar15@gmail.com](mailto:lueduar15@gmail.com)
