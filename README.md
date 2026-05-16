@@ -1,84 +1,88 @@
 # Luis Romero
 
-**Full-Stack Developer** — I build real products, ship them to production, 
-and solve hard problems autonomously.
+Backend Developer with Full-Stack capabilities focused on building real-world products with AI, automation, and production-ready architectures.
+
+I specialize in turning ideas and operational problems into scalable systems with strong focus on reliability, AI integration, automation, and user experience.
+
+Currently building and maintaining products actively used by real users.
 
 ---
 
-## 🚀 What I've Built
+# 🚀 Featured Projects
 
-### CRONIX — Multi-tenant SaaS in Production
-**[cronix-app.vercel.app](https://cronix-app.vercel.app)**
+## ▶ CRONIX — Multi-tenant SaaS for Service Businesses
 
-A business and appointment management platform for service businesses 
-in Latin America. Built entirely solo.
+🔗 https://cronix-app.vercel.app
 
-- **WhatsApp AI Agent** — Groq + Llama 3.3 (70b) for natural language 
-  appointment booking. ~1.2s response latency via LPU architecture
-- **Voice transcription** — Users send voice notes in Spanish, 
-  transcribed via Groq Whisper and processed by the AI agent
-- **Biometric auth** — WebAuthn/Passkeys (Face ID + fingerprint) via 
-  @simplewebauthn v13. Zero-password login on iOS, Android and desktop
-- **Google OAuth** with automatic identity linking — same-email accounts 
-  merge regardless of sign-in method
-- **3-layer anti-spam** — Atomic PostgreSQL rate limiting (10 msg/60s), 
-  anti-prompt-injection sanitization, booking rate limiting (2/24h)
-- **Push notifications** — Triggered by Supabase Database Webhooks 
-  on appointment insert. Event-driven, fully decoupled
-- **RLS multi-tenancy** — 26 pgTAP integration tests against real 
-  PostgreSQL. No mocks
-- **PWA** — Installable on iOS, Android and desktop. Offline support
-- **Full-stack Sentry** — Multi-tenant error monitoring across Next.js 
-  and Supabase Edge Functions (Deno)
+Production SaaS platform for service businesses in Latin America, designed and developed independently from architecture to deployment.
 
-`Next.js 14` `TypeScript` `PostgreSQL` `Supabase` `Groq API` `Llama 3.3`
-`Groq Whisper` `WebAuthn` `React Query v5` `Zod` `pgTAP` `Sentry` `Vercel`
+### Highlights
+
+- AI agents for WhatsApp and web with natural language appointment booking
+- Anti-hallucination flows using Fast Paths, deterministic validations, and backend-controlled LLM logic
+- Voice note transcription with Groq Whisper
+- WebAuthn/Passkeys authentication (Face ID & fingerprint)
+- Google OAuth with automatic identity linking
+- 3-layer anti-spam protection with PostgreSQL atomic rate limiting
+- Real-time push notifications triggered by database events
+- Multi-tenant architecture with Row Level Security (RLS)
+- Installable PWA with offline support
+- Full-stack monitoring and error tracking with Sentry
+- Integration tests against real PostgreSQL using pgTAP
+
+### Stack
+
+Next.js 14 · TypeScript · Node.js · PostgreSQL · Supabase · Groq API · Llama 3.3 · Groq Whisper · WebAuthn · React Query · Zod · pgTAP · Sentry · Vercel
 
 ---
 
-### IBIME Connect — Institutional Government Platform
-**[ibime-connect.vercel.app](https://ibime-connect.vercel.app)**
+## ▶ IBIME Connect — Government Institutional Platform
 
-I identified that the organization was running on a static HTML page. 
-I designed and built a modern platform on my own initiative — 
-they adopted it fully and migrated their entire system.
+🔗 https://ibime-connect.vercel.app
 
-- **RAG pipeline** — pgvector (PostgreSQL) for semantic search + 
-  Google Gemini API for natural language responses. Deployed via 
-  Supabase Edge Functions (Deno). All AI keys server-side
-- **Event registration system** — Cultural events and courses with 
-  full relational schema and RLS policies
-- **Citizen contact inbox** — Automated request management
-- **Real-time visitor counter**
-- Accessible UI with dark/light mode, glassmorphism design, 
-  shadcn/ui + Radix UI primitives
+Led the modernization of a legacy static HTML/CSS website into a fully adopted institutional full-stack platform.
 
-`React 18` `TypeScript` `Vite` `Supabase` `pgvector` `Google Gemini`
-`Edge Functions (Deno)` `TanStack React Query` `Tailwind CSS` `shadcn/ui`
+### Highlights
 
----
+- AI-powered institutional assistance system using hybrid RAG architecture with deterministic guardrails
+- Anti-hallucination architecture with Fast Paths, Privacy Gate, Guardrails, and Response Policies
+- Semantic search pipeline using PostgreSQL + pgvector
+- Secure LLM workflows with Redis session control and validation layers
+- Event and cultural course registration system
+- Automated citizen contact inbox
+- Document ingestion pipeline with semantic chunking and contextual indexing
+- Production-oriented Quality Gate with automated testing and CI/CD workflows
+- Accessible and responsive institutional UI
 
-## 🛠 Stack
-```
-Languages:   TypeScript · JavaScript · SQL
-Backend:     Next.js 14 (App Router) · Node.js · Express · Supabase Edge Functions (Deno)
-Databases:   PostgreSQL · MySQL · MongoDB · pgvector
-Auth:        WebAuthn/Passkeys · Google OAuth · JWT · Bcrypt · RLS
-AI & LLMs:   RAG · Groq API · Llama 3.3 · Groq Whisper · Google Gemini · pgvector
-Frontend:    React 18 · Next.js · Tailwind CSS · shadcn/ui · Radix UI · PWA
-Testing:     Vitest · pgTAP
-Infra:       Vercel · GitHub Actions · Docker · Sentry · n8n
-```
+### Stack
+
+React · TypeScript · Node.js · Express · PostgreSQL · Supabase · pgvector · Redis · Docker · RAG · Tailwind CSS · Vercel
 
 ---
 
-## 📫 Contact
+# 🛠 Core Stack
 
-[LinkedIn](https://www.linkedin.com/in/luisromero15/) · 
-[Portfolio](https://portafolio-luis-romero.vercel.app/) · 
-[lueduar15@gmail.com](mailto:lueduar15@gmail.com)
+### Backend
 
+TypeScript · Node.js · Express · PostgreSQL · Supabase · Redis · REST APIs
 
+### AI & Automation
 
+RAG · LLM Integrations · Groq · Google Gemini · pgvector · AI Workflows · Prompt Engineering
 
+### Frontend
 
+React · Next.js · Tailwind CSS · shadcn/ui · PWA
+
+### Infra & Quality
+
+Docker · GitHub Actions · CI/CD · Testing · Sentry · Vercel
+
+---
+
+# 📫 Contact
+
+- LinkedIn: https://www.linkedin.com/in/luisromero15/
+- GitHub: https://github.com/ROMEROLUIS15
+- Email: lueduar15@gmail.com
+  
