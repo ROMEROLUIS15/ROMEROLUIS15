@@ -11,7 +11,7 @@ Currently developing, scaling, and maintaining products actively used by real us
 # 🚀 Featured Production Systems
 
 ## ▶ CRONIX — Multi-Tenant SaaS Platform
-🔗 [cronix-app.vercel.app](https://vercel.app)
+🔗 [[cronix-app.vercel.app](https://vercel.app)](https://cronix-app.vercel.app/)
 
 A multi-tenant SaaS platform for service businesses in Latin America, designed and scaled independently from infrastructure to edge deployment.
 
