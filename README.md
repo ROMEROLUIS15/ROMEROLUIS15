@@ -11,7 +11,7 @@ Currently developing, scaling, and maintaining products actively used by real us
 # 🚀 Featured Production Systems
 
 ## ▶ CRONIX — Multi-Tenant SaaS Platform
-🔗 [[cronix-app.vercel.app](https://vercel.app)](https://cronix-app.vercel.app/)
+🔗 (https://cronix-app.vercel.app/)
 
 A multi-tenant SaaS platform for service businesses in Latin America, designed and scaled independently from infrastructure to edge deployment.
 
@@ -28,7 +28,7 @@ A multi-tenant SaaS platform for service businesses in Latin America, designed a
 ---
 
 ## ▶ IBIME Connect — Government Institutional Platform
-🔗 [ibime-connect.vercel.app](https://vercel.app)
+🔗 (https://ibime-connect.vercel.app/))
 
 Modernization of a legacy government static HTML/CSS web ecosystem into an institutional full-stack digital platform.
 
@@ -74,7 +74,7 @@ Docker · GitHub Actions · CI/CD Pipelines · Automated Testing (Vitest · Play
 
 # 📫 Contact
 
-- **LinkedIn:** [://linkedin.com](https://www.://linkedin.com/)
-- **GitHub:** [://github.com](https://://github.com)
+- **LinkedIn:** ([https://www.://linkedin.com/](https://www.linkedin.com/in/luisromero15/))
+- **GitHub:** ([https://://github.com](https://github.com/ROMEROLUIS15))
 - **Email:** lueduar15@gmail.com
 
