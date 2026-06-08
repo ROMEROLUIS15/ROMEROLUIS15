@@ -74,7 +74,7 @@ Docker · GitHub Actions · CI/CD Pipelines · Automated Testing (Vitest · Play
 
 # 📫 Contact
 
-- **LinkedIn:** ([https://www.://linkedin.com/](https://www.linkedin.com/in/luisromero15/))
-- **GitHub:** ([https://://github.com](https://github.com/ROMEROLUIS15))
+- **LinkedIn:** (https://www.linkedin.com/in/luisromero15/))
+- **GitHub:** (https://github.com/ROMEROLUIS15))
 - **Email:** lueduar15@gmail.com
 
