@@ -1,88 +1,80 @@
 # Luis Romero
 
-Backend Developer with Full-Stack capabilities focused on building real-world products with AI, automation, and production-ready architectures.
+Backend & AI Engineer with Full-Stack capabilities focused on building real-world software products with autonomous AI agents, backend architectures, and rigorous deterministic engineering.
 
-I specialize in turning ideas and operational problems into scalable systems with strong focus on reliability, AI integration, automation, and user experience.
+I focus on designing and scaling end-to-end cloud platforms, optimizing relational domains, enforcing multi-tenant data isolation, and implementing multi-layer anti-hallucination architectures for generative AI.
 
-Currently building and maintaining products actively used by real users.
+Currently developing, scaling, and maintaining products actively used by real users.
 
 ---
 
-# 🚀 Featured Projects
+# 🚀 Featured Production Systems
 
-## ▶ CRONIX — Multi-tenant SaaS for Service Businesses
+## ▶ CRONIX — Multi-Tenant SaaS Platform
+🔗 [cronix-app.vercel.app](https://vercel.app)
 
-🔗 https://cronix-app.vercel.app
-
-Production SaaS platform for service businesses in Latin America, designed and developed independently from architecture to deployment.
+A multi-tenant SaaS platform for service businesses in Latin America, designed and scaled independently from infrastructure to edge deployment.
 
 ### Highlights
+- **Custom AI Orchestration Engine:** Frameworkless integration for WhatsApp and web voice agents utilizing Groq and Deepgram with 11 core system capabilities and autonomous scheduling pipelines.
+- **5-Layer Anti-Hallucination Flow:** Implemented Fast Paths, Privacy Gates, fail-hard RAG thresholds, Response Guardrails, and rigid Backend Response Policies to keep the LLM off the critical path for cached operations.
+- **Strict Multi-Tenant Isolation:** Enforced data security across 4 distinct layers using PostgreSQL Row-Level Security (116 RLS policies over 44 tables), fully validated via 127 automated pgTAP assertion tests.
+- **Edge Architecture & Observability:** Instrumented a tracking layer across 9 Deno Edge Functions, capturing structured logs for latency, token consumption, and automated multi-tenant error tracking.
+- **Idempotent Billing Systems:** Integrated global and local payment webhooks (PayPal, NOWPayments, Pago Móvil, Binance) backed by an asynchronous queue fulfillment architecture via Upstash QStash.
+- **Enterprise Core Features:** WebAuthn/Passkeys authentication (Face ID & fingerprint), 3-layer anti-spam protection with PostgreSQL atomic rate-limiting, and an installable PWA with offline support.
 
-- AI agents for WhatsApp and web with natural language appointment booking
-- Anti-hallucination flows using Fast Paths, deterministic validations, and backend-controlled LLM logic
-- Voice note transcription with Groq Whisper
-- WebAuthn/Passkeys authentication (Face ID & fingerprint)
-- Google OAuth with automatic identity linking
-- 3-layer anti-spam protection with PostgreSQL atomic rate limiting
-- Real-time push notifications triggered by database events
-- Multi-tenant architecture with Row Level Security (RLS)
-- Installable PWA with offline support
-- Full-stack monitoring and error tracking with Sentry
-- Integration tests against real PostgreSQL using pgTAP
-
-### Stack
-
-Next.js 14 · TypeScript · Node.js · PostgreSQL · Supabase · Groq API · Llama 3.3 · Groq Whisper · WebAuthn · React Query · Zod · pgTAP · Sentry · Vercel
+**Stack:** Next.js 15 · TypeScript · Node.js · PostgreSQL · Supabase · Row-Level Security (RLS) · Edge Functions (Deno) · Groq API · Deepgram · Upstash · Redis · pgTAP · Sentry · Vercel
 
 ---
 
 ## ▶ IBIME Connect — Government Institutional Platform
+🔗 [ibime-connect.vercel.app](https://vercel.app)
 
-🔗 https://ibime-connect.vercel.app
-
-Led the modernization of a legacy static HTML/CSS website into a fully adopted institutional full-stack platform.
+Modernization of a legacy government static HTML/CSS web ecosystem into an institutional full-stack digital platform.
 
 ### Highlights
+- **Stateful AI Agent Pipelines:** Built a data processing engine using LangGraph (extractor-validator-corrector loop) to parse and structure complex catalog PDFs into validated JSON schemas.
+- **Hybrid RAG Architecture:** Engineered a semantic search pipeline over PostgreSQL + pgvector utilizing Gemini embeddings, optimized via Redis session caching and a custom token rate limiter.
+- **Comprehensive Quality Gate:** Established clean architecture principles, strict dependency injection, and shared Zod schema validation across front-and-backend, backed by 230+ automated tests (Vitest + Playwright).
+- **Core Government Operations:** Designed an event/course registration system, an automated citizen inbox, and a secure document ingestion pipeline with contextual chunking.
 
-- AI-powered institutional assistance system using hybrid RAG architecture with deterministic guardrails
-- Anti-hallucination architecture with Fast Paths, Privacy Gate, Guardrails, and Response Policies
-- Semantic search pipeline using PostgreSQL + pgvector
-- Secure LLM workflows with Redis session control and validation layers
-- Event and cultural course registration system
-- Automated citizen contact inbox
-- Document ingestion pipeline with semantic chunking and contextual indexing
-- Production-oriented Quality Gate with automated testing and CI/CD workflows
-- Accessible and responsive institutional UI
+**Stack:** React · TypeScript · Node.js · Express · PostgreSQL · pgvector · Gemini · LangGraph · Redis · Supabase · Zod · Vitest · Playwright · Vercel
 
-### Stack
+---
 
-React · TypeScript · Node.js · Express · PostgreSQL · Supabase · pgvector · Redis · Docker · RAG · Tailwind CSS · Vercel
+## ▶ Industrial CMMS — Maintenance & Logistics Infrastructure
+
+Designed and deployed an end-to-end industrial Computerized Maintenance Management System, digitizing and replacing paper-based inspection workflows for an industrial maintenance firm.
+
+### Highlights
+- **Relational Backend:** Architected 52 REST endpoints over 11 relational data models, featuring JWT rotative refresh tokens, request idempotency, and role+ownership authorization.
+- **Multi-Graph Diagnostic Assistant:** Built an AI diagnostic subsystem using a multi-node LangGraph orchestration architecture with tool-calling agents over historical industrial inspection logs.
+- **High-Performance PWA:** Delivered a React 19 Progressive Web App featuring full offline capabilities (IndexedDB + Background Sync), a 13-step inspection wizard with digital Canvas signatures, and real-time streaming via Server-Sent Events (SSE).
+- **Testing Coverage:** Backed by 394 automated tests achieving 82% backend line coverage with dual-database support (PostgreSQL/Neon + SQLite).
+
+**Stack:** React 19 · Node.js · TypeScript · LangGraph · PostgreSQL · SQLite · IndexedDB · Server-Sent Events (SSE) · Docker · PWA · Vitest
 
 ---
 
 # 🛠 Core Stack
 
-### Backend
+### Backend & Architecture
+TypeScript · Node.js · Express · NestJS · PostgreSQL · Supabase · Row-Level Security (RLS) · Redis · SQL · REST APIs · System Design
 
-TypeScript · Node.js · Express · PostgreSQL · Supabase · Redis · REST APIs
+### AI & Intelligent Agents
+LangGraph · Retrieval-Augmented Generation (RAG) · LLM Orchestration · pgvector · Vector Databases · Groq · Google Gemini · Prompt Engineering
 
-### AI & Automation
+### Frontend & Mobile
+React · Next.js · Tailwind CSS · TypeScript · JavaScript · HTML5/CSS3 · IndexedDB · Progressive Web Apps (PWA)
 
-RAG · LLM Integrations · Groq · Google Gemini · pgvector · AI Workflows · Prompt Engineering
-
-### Frontend
-
-React · Next.js · Tailwind CSS · shadcn/ui · PWA
-
-### Infra & Quality
-
-Docker · GitHub Actions · CI/CD · Testing · Sentry · Vercel
+### DevOps, Infra & Testing
+Docker · GitHub Actions · CI/CD Pipelines · Automated Testing (Vitest · Playwright · pgTAP) · Sentry · Vercel · Deno Deploy · Edge Computing
 
 ---
 
 # 📫 Contact
 
-- LinkedIn: https://www.linkedin.com/in/luisromero15/
-- GitHub: https://github.com/ROMEROLUIS15
-- Email: lueduar15@gmail.com
-  
+- **LinkedIn:** [://linkedin.com](https://www.://linkedin.com/)
+- **GitHub:** [://github.com](https://://github.com)
+- **Email:** lueduar15@gmail.com
+
