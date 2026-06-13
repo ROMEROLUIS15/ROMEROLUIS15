@@ -1,78 +1,99 @@
 # Luis Romero
 
-Backend & AI Engineer with Full-Stack capabilities focused on building real-world software products with autonomous AI agents, backend architectures, and rigorous deterministic engineering.
+AI Engineer and Backend Developer with Full-Stack capabilities focused on building production software powered by AI, automation, and modern cloud architectures.
 
-I focus on designing and scaling end-to-end cloud platforms, optimizing relational domains, enforcing multi-tenant data isolation, and implementing multi-layer anti-hallucination architectures for generative AI.
+Over the last 2+ years, I have built and deployed complete systems from database design to production infrastructure, including AI agents, RAG platforms, multi-tenant SaaS products, payment integrations, and real-time applications.
 
-Currently developing, scaling, and maintaining products actively used by real users.
+My focus is not just connecting an LLM. I design the systems around it: deterministic workflows, guardrails, semantic search, observability, evaluation pipelines, and architectures that keep AI reliable when used by real users.
+
+Currently building and operating products in production used by businesses and institutions.
 
 ---
 
-# 🚀 Featured Production Systems
+## What I Do
 
-## ▶ CRONIX — Multi-Tenant SaaS Platform
-🔗 (https://cronix-app.vercel.app/)
+- Build AI Agents and LLM-powered applications for real-world workflows.
+- Design anti-hallucination architectures and hybrid AI systems that combine deterministic logic with language models.
+- Develop RAG systems using PostgreSQL, pgvector, semantic search, and conversational memory.
+- Architect scalable backend platforms with Node.js, TypeScript, PostgreSQL, Redis, and serverless infrastructure.
+- Build multi-tenant SaaS platforms with strong data isolation and security controls.
+- Integrate authentication, payment gateways, external APIs, voice AI, and real-time communication systems.
+- Deliver complete products from database → backend → AI → frontend → CI/CD → production.
 
-A multi-tenant SaaS platform for service businesses in Latin America, designed and scaled independently from infrastructure to edge deployment.
+---
+
+# Featured Projects
+
+## CRONIX
+
+Multi-tenant SaaS platform for service businesses with AI-powered appointment management.
 
 ### Highlights
-- **Custom AI Orchestration Engine:** Frameworkless integration for WhatsApp and web voice agents utilizing Groq and Deepgram with 11 core system capabilities and autonomous scheduling pipelines.
-- **5-Layer Anti-Hallucination Flow:** Implemented Fast Paths, Privacy Gates, fail-hard RAG thresholds, Response Guardrails, and rigid Backend Response Policies to keep the LLM off the critical path for cached operations.
-- **Strict Multi-Tenant Isolation:** Enforced data security across 4 distinct layers using PostgreSQL Row-Level Security (116 RLS policies over 44 tables), fully validated via 127 automated pgTAP assertion tests.
-- **Edge Architecture & Observability:** Instrumented a tracking layer across 9 Deno Edge Functions, capturing structured logs for latency, token consumption, and automated multi-tenant error tracking.
-- **Idempotent Billing Systems:** Integrated global and local payment webhooks (PayPal, NOWPayments, Pago Móvil, Binance) backed by an asynchronous queue fulfillment architecture via Upstash QStash.
-- **Enterprise Core Features:** WebAuthn/Passkeys authentication (Face ID & fingerprint), 3-layer anti-spam protection with PostgreSQL atomic rate-limiting, and an installable PWA with offline support.
 
-**Stack:** Next.js 15 · TypeScript · Node.js · PostgreSQL · Supabase · Row-Level Security (RLS) · Edge Functions (Deno) · Groq API · Deepgram · Upstash · Redis · pgTAP · Sentry · Vercel
+- Built and operate the platform end-to-end, including database architecture, backend services, AI systems, infrastructure, deployment, and monitoring.
+- Developed a custom AI orchestration engine for WhatsApp and Voice AI agents using Groq, Deepgram, tool calling, and autonomous scheduling workflows.
+- Implemented a deterministic anti-hallucination architecture that prevents AI-generated errors during appointment and customer management operations.
+- Enforced multi-tenant isolation through PostgreSQL Row-Level Security (RLS), scoped repositories, API validation layers, and automated database testing.
+- Integrated payment processing with PayPal, NOWPayments, Binance, and local payment methods using asynchronous webhook-driven workflows.
+- Built a production-grade quality pipeline with 1,000+ automated tests, CI/CD, monitoring, and observability.
+
+**Stack:** TypeScript · Node.js · PostgreSQL · Supabase · Next.js · Edge Functions · Redis · pgvector · Groq · Deepgram · WebAuthn · Playwright · pgTAP · GitHub Actions · Vercel
 
 ---
 
-## ▶ IBIME Connect — Government Institutional Platform
-🔗 (https://ibime-connect.vercel.app/))
+## IBIME Connect
 
-Modernization of a legacy government static HTML/CSS web ecosystem into an institutional full-stack digital platform.
+Institutional platform built for a public library network, replacing a legacy static website with a modern full-stack system and AI assistant.
 
 ### Highlights
-- **Stateful AI Agent Pipelines:** Built a data processing engine using LangGraph (extractor-validator-corrector loop) to parse and structure complex catalog PDFs into validated JSON schemas.
-- **Hybrid RAG Architecture:** Engineered a semantic search pipeline over PostgreSQL + pgvector utilizing Gemini embeddings, optimized via Redis session caching and a custom token rate limiter.
-- **Comprehensive Quality Gate:** Established clean architecture principles, strict dependency injection, and shared Zod schema validation across front-and-backend, backed by 230+ automated tests (Vitest + Playwright).
-- **Core Government Operations:** Designed an event/course registration system, an automated citizen inbox, and a secure document ingestion pipeline with contextual chunking.
 
-**Stack:** React · TypeScript · Node.js · Express · PostgreSQL · pgvector · Gemini · LangGraph · Redis · Supabase · Zod · Vitest · Playwright · Vercel
+- Designed and deployed the platform from scratch, including administrative tools, citizen services, and AI-powered search capabilities.
+- Built a hybrid AI architecture that keeps the LLM outside the critical path whenever deterministic data retrieval is possible.
+- Implemented semantic search and Retrieval-Augmented Generation (RAG) using PostgreSQL, pgvector, Gemini embeddings, and Redis caching.
+- Developed LangGraph-based document processing workflows that transform PDF catalogs into validated structured data.
+- Applied dependency injection, shared validation schemas, automated testing, and deployment pipelines.
+
+**Stack:** TypeScript · Node.js · Express · PostgreSQL · Redis · React · Supabase · LangGraph · Gemini · pgvector · Vitest · Playwright
 
 ---
 
-## ▶ Industrial CMMS — Maintenance & Logistics Infrastructure
+## Industrial CMMS
 
-Designed and deployed an end-to-end industrial Computerized Maintenance Management System, digitizing and replacing paper-based inspection workflows for an industrial maintenance firm.
+Computerized Maintenance Management System developed for an industrial maintenance company.
 
 ### Highlights
-- **Relational Backend:** Architected 52 REST endpoints over 11 relational data models, featuring JWT rotative refresh tokens, request idempotency, and role+ownership authorization.
-- **Multi-Graph Diagnostic Assistant:** Built an AI diagnostic subsystem using a multi-node LangGraph orchestration architecture with tool-calling agents over historical industrial inspection logs.
-- **High-Performance PWA:** Delivered a React 19 Progressive Web App featuring full offline capabilities (IndexedDB + Background Sync), a 13-step inspection wizard with digital Canvas signatures, and real-time streaming via Server-Sent Events (SSE).
-- **Testing Coverage:** Backed by 394 automated tests achieving 82% backend line coverage with dual-database support (PostgreSQL/Neon + SQLite).
 
-**Stack:** React 19 · Node.js · TypeScript · LangGraph · PostgreSQL · SQLite · IndexedDB · Server-Sent Events (SSE) · Docker · PWA · Vitest
+- Replaced paper-based inspection workflows with a complete digital platform.
+- Developed a multi-agent diagnostic assistant using LangGraph, tool calling, and historical maintenance data.
+- Built secure backend services with JWT authentication, role-based authorization, idempotency controls, and Server-Sent Events.
+- Delivered a React Progressive Web App with offline support, digital signatures, PDF reports, and field operations capabilities.
+- Supported by automated testing, CI pipelines, and dual database environments for development and production.
+
+**Stack:** TypeScript · Node.js · PostgreSQL · React · LangGraph · IndexedDB · PWA · Docker · Vitest
 
 ---
 
-# 🛠 Core Stack
+# Core Technologies
 
 ### Backend & Architecture
-TypeScript · Node.js · Express · NestJS · PostgreSQL · Supabase · Row-Level Security (RLS) · Redis · SQL · REST APIs · System Design
 
-### AI & Intelligent Agents
-LangGraph · Retrieval-Augmented Generation (RAG) · LLM Orchestration · pgvector · Vector Databases · Groq · Google Gemini · Prompt Engineering
+TypeScript · Node.js · Express · PostgreSQL · SQL · Redis · Supabase · REST APIs · Serverless · Edge Functions · Event-Driven Architecture · Multi-Tenant Systems
 
-### Frontend & Mobile
-React · Next.js · Tailwind CSS · TypeScript · JavaScript · HTML5/CSS3 · IndexedDB · Progressive Web Apps (PWA)
+### AI & LLM Systems
 
-### DevOps, Infra & Testing
-Docker · GitHub Actions · CI/CD Pipelines · Automated Testing (Vitest · Playwright · pgTAP) · Sentry · Vercel · Deno Deploy · Edge Computing
+AI Agents · LangGraph · RAG · Semantic Search · Tool Calling · Function Calling · pgvector · LLM Evaluation · LLM Observability · Groq · Gemini · Deepgram · MCP
+
+### Frontend
+
+React · Next.js · TypeScript · Tailwind CSS · Progressive Web Apps (PWA)
+
+### DevOps & Testing
+
+Docker · GitHub Actions · CI/CD · Vercel · Render · Sentry · Vitest · Playwright · pgTAP
 
 ---
 
-# 📫 Contact
+## Contact
 
 - **LinkedIn:** (https://www.linkedin.com/in/luisromero15/))
 - **GitHub:** (https://github.com/ROMEROLUIS15))
