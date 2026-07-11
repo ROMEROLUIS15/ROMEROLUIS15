@@ -2,7 +2,7 @@
 
 AI Engineer and Backend Developer with Full-Stack capabilities focused on building production software powered by AI, automation, and modern cloud architectures.
 
-Over the last 2+ years, I have built and deployed complete systems from database design to production infrastructure, including AI agents, RAG platforms, multi-tenant SaaS products, payment integrations, and real-time applications.
+Over the last 3 years, I have built and deployed complete systems from database design to production infrastructure, including AI agents, RAG platforms, multi-tenant SaaS products, payment integrations, and real-time applications.
 
 My focus is not just connecting an LLM. I design the systems around it: deterministic workflows, guardrails, semantic search, observability, evaluation pipelines, and architectures that keep AI reliable when used by real users.
 
