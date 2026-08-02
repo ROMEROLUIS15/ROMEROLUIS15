@@ -6,7 +6,7 @@ I build and deploy complete systems from database design to production infrastru
 
 My focus is not just connecting an LLM. I design the systems around it: deterministic workflows, guardrails, semantic search, observability, evaluation pipelines, and architectures that keep AI reliable when it faces real users.
 
-Currently building and operating products in production, used by businesses and a public institution.
+Currently a backend developer at a US software company, while building and operating my own products in production, used by real businesses every day.
 
 ---
 
@@ -42,6 +42,27 @@ Multi-tenant SaaS platform for service businesses, with AI-powered appointment m
 
 ---
 
+## Advanced Product Search API
+
+Product and manufacturer discovery API: relevance ranking, faceted filtering, autocomplete and query suggestions. **Public repository with live API docs — the technical challenge that got me hired.**
+
+**Live:** [OpenAPI docs](https://advanced-search-api-chet.onrender.com/docs) · [Repository](https://github.com/ROMEROLUIS15/advanced-search-api)
+
+### Highlights
+
+- Built BM25 relevance on Elasticsearch 8 with typo tolerance, tuned by popularity and recency (`function_score`), plus type-ahead autocomplete and "did you mean" suggestions.
+- Implemented faceted filtering where each dimension's counts exclude its own filter, so users can widen a search instead of hitting zero results — results, facets and suggestions in a single Elasticsearch round-trip.
+- Strict hexagonal architecture: the domain layer imports neither NestJS nor Elasticsearch; 7 ports behind `Symbol` tokens, a cache that never fails a request when Redis is down, and rate limiting with Redis→in-process failover.
+- Zero-downtime index migrations: each index version is named after the fingerprint of its own definition and goes live by flipping an alias atomically, with liveness split from readiness so the platform's health poll costs no Redis round-trip.
+- Access control designed around what each surface actually exposes: an API key on every client endpoint, `/metrics` behind its own bearer token (which the env schema refuses to boot without in production), and `/docs` deliberately *not* exempt — publishing the contract of a catalogue that is not meant for strangers would be a lock on the door with the blueprints taped to the window. The auth guard runs *after* the rate limiter on purpose, so an unauthenticated flood still spends a budget instead of being rejected for free.
+- Load-tested for two different questions. Capacity: 398,000 requests, 0 failures, 1,730 req/s, with a per-scenario p95 threshold on all 7 workloads (autocomplete 3.8 ms, warm search 4.5 ms, cold facets 31 ms). Correctness under abuse: flooded well past the budget, the limiter accepted exactly its 60 and rejected the other 240 with a typed 429 — zero 5xx, no timeouts, no slow tail. Plus a smoke suite run against the live production deployment.
+- Verified rather than asserted: 500+ tests (97% statement coverage, including integration against a real Elasticsearch cluster; coverage runs as a CI gate, not as a badge), and a full security chain in CI — CodeQL (SAST), Dependabot (SCA), gitleaks over the entire git history, Trivy + SBOM on the shipped image, and OWASP ZAP against the running API (128 URLs, 0 findings). Every action and scanner image pinned by immutable digest, and every ZAP rule override documented as a design decision so the scan stays signal instead of noise.
+- Structured logging with a correlation id per request, Prometheus and OTLP metrics, and distributed tracing. Estimates were checked against production rather than trusted: the projected ~400 metric series measured 94, the projected <10 MB/month of logs measured ~2 MB — and the measurement surfaced a real finding, that the platform was throttling the keep-alive cron to roughly one run every 2.5 hours.
+
+**Stack:** TypeScript · NestJS · Elasticsearch 8 · Redis · Docker · OpenAPI/Swagger · OpenTelemetry · Prometheus · k6 · CodeQL · OWASP ZAP · Trivy · GitHub Actions · Render
+
+---
+
 ## Motosmax Cordialidad
 
 Multi-tenant SaaS in production for a motorcycle workshop: work orders, per-branch inventory, quotes, motorcycle sales, and CRM.
@@ -60,7 +81,7 @@ Multi-tenant SaaS in production for a motorcycle workshop: work orders, per-bran
 
 ## IBIME Connect
 
-Institutional platform for a public library network, replacing a legacy static website with a modern full-stack system and an AI assistant. I built it, the institution adopted it as its official platform, and I now lead its software development.
+Institutional platform for a public library network, replacing a legacy static website with a modern full-stack system and an AI assistant. I built it, the institution adopted it as its official platform, and appointed me to lead its software development.
 
 ### Highlights
 
@@ -94,7 +115,7 @@ Computerized Maintenance Management System for an industrial maintenance company
 
 ### Backend & Architecture
 
-TypeScript · Node.js · Python · Express · NestJS · FastAPI · PostgreSQL · SQL · Prisma · Redis · Supabase · REST APIs · Serverless · Edge Functions · Event-Driven Architecture · Multi-Tenant Systems · Spec-Driven Development (SDD)
+TypeScript · Node.js · Python · Express · NestJS · FastAPI · PostgreSQL · SQL · Prisma · Redis · Elasticsearch · Supabase · REST APIs · OpenAPI/Swagger · Serverless · Edge Functions · Event-Driven Architecture · Hexagonal Architecture · Multi-Tenant Systems · Spec-Driven Development (SDD)
 
 ### AI & LLM Systems
 
@@ -106,12 +127,12 @@ React · Next.js · TypeScript · Tailwind CSS · Progressive Web Apps (PWA)
 
 ### DevOps & Testing
 
-Docker · GitHub Actions · CI/CD · Vercel · Render · Cloudflare · Sentry · Load Testing (k6) · Vitest · pytest · Playwright · pgTAP
+Docker · GitHub Actions · CI/CD · Vercel · Render · Cloudflare · Sentry · OpenTelemetry · Load Testing (k6) · Vitest · Jest · pytest · Playwright · pgTAP · CodeQL · OWASP ZAP · Trivy · SBOM · Supply-Chain Security
 
 ---
 
 ## Contact
 
-- **LinkedIn:** https://www.linkedin.com/in/15-luis-romero/
+- **LinkedIn:** https://www.linkedin.com/in/luis-romero-dev-back15/
 - **GitHub:** https://github.com/ROMEROLUIS15
 - **Email:** lueduar15@gmail.com
