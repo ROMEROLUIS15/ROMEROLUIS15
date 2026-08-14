@@ -1,5 +1,3 @@
-# Luis Romero
-
 AI Engineer and Backend Developer with Full-Stack capabilities, focused on building production software powered by AI, automation, and modern cloud architectures.
 
 I build and deploy complete systems from database design to production infrastructure — AI agents, RAG platforms, multi-tenant SaaS products, payment integrations, and real-time applications.
