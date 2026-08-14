@@ -133,6 +133,6 @@ Docker · GitHub Actions · CI/CD · Vercel · Render · Cloudflare · Sentry ·
 
 ## Contact
 
-- **LinkedIn:** https://www.linkedin.com/in/luis-romero-dev-back15/
+- **LinkedIn:** https://www.linkedin.com/in/hernandezrs955
 - **GitHub:** https://github.com/ROMEROLUIS15
 - **Email:** lueduar15@gmail.com
