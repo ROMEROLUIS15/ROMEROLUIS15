@@ -1,10 +1,24 @@
+# Luis Romero
+
 AI Engineer and Backend Developer with Full-Stack capabilities, focused on building production software powered by AI, automation, and modern cloud architectures.
 
 I build and deploy complete systems from database design to production infrastructure — AI agents, RAG platforms, multi-tenant SaaS products, payment integrations, and real-time applications.
 
 My focus is not just connecting an LLM. I design the systems around it: deterministic workflows, guardrails, semantic search, observability, evaluation pipelines, and architectures that keep AI reliable when it faces real users.
 
-Currently a backend developer at a US software company, while building and operating my own products in production, used by real businesses every day.
+I build backend for a software company in Texas (United States), while also building and operating my own products in production, used by real businesses every day.
+
+---
+
+## Backend Developer — Complexity (Texas, United States)
+
+Project Factory: backend of a B2B company-directory platform with a mobile app and an admin panel. REST API, real time over WebSockets, job queues and full-text search (Node.js · NestJS · TypeScript · PostgreSQL · Redis · Elasticsearch · AWS). Private codebase.
+
+- **Setting the backend's direction.** Audited the backend when I joined, presented the findings to the team and got my remediation plan approved, which I now lead without pausing the roadmap: removed improper coupling between modules, cut circular dependencies from 31 to 2 and moved business logic into 211 use cases on a hexagonal architecture.
+- **Planning and delivery on an agent harness.** Planned the backend in 500+ tickets and delivered it at a high pace: 790+ pull requests merged and 13 production deployments in two months, on an AI agent harness I designed (Orca, Gentle AI, MCP, Spec-Driven Development), reviewing and approving every change.
+- **Quality and security pipeline, from scratch.** When I joined, no pull request ran any tests; today every change goes through strict typing, unit and integration tests, security scanning (SAST/SCA, secrets) and architecture rules, with end-to-end tests in the pipeline (~5 min, zero known failures). Unit tests: from 20 to 594 suites (almost 30x).
+- **Go-to-market, end to end.** Led "claim your company", the product's go-to-market (GTM) program: claims backend and admin panel backend, with verification through corporate email. Also delivered the Resend integration (every sign-up becomes a contact through a queue that never breaks registration; I migrated and repaired the existing ones in production), orders on a state machine that holds up under simultaneous actions, and product search on Elasticsearch that never shows withdrawn products.
+- **Security and operations.** Resolved an urgent personal-data exposure report in under 4 hours, added rate limiting with Redis and declared access control on every endpoint, and protected the production deploy on AWS with a health check that stops any release that does not respond.
 
 ---
 
@@ -113,7 +127,11 @@ Computerized Maintenance Management System for an industrial maintenance company
 
 ### Backend & Architecture
 
-TypeScript · Node.js · Python · Express · NestJS · FastAPI · PostgreSQL · SQL · Prisma · Redis · Elasticsearch · Supabase · REST APIs · OpenAPI/Swagger · Serverless · Edge Functions · Event-Driven Architecture · Hexagonal Architecture · Multi-Tenant Systems · Spec-Driven Development (SDD)
+TypeScript · Node.js · Python · Express · NestJS · FastAPI · PostgreSQL · SQL · Prisma · TypeORM · Redis · BullMQ · Elasticsearch · Supabase · REST APIs · OpenAPI/Swagger · Socket.IO · Resend · React Email · Serverless · Edge Functions · Event-Driven Architecture · Hexagonal Architecture · Multi-Tenant Systems · Spec-Driven Development (SDD)
+
+### Harness Engineering & AI-Assisted Development
+
+Orca (ADE) · Gentle AI · Engram (persistent agent memory) · MCP (Linear, Sentry, AWS, Resend, Figma) · Multi-agent orchestration · Subagents · Agent hooks & skills · Context Engineering · Human review · CI quality checks
 
 ### AI & LLM Systems
 
@@ -125,7 +143,7 @@ React · Next.js · TypeScript · Tailwind CSS · Progressive Web Apps (PWA)
 
 ### DevOps & Testing
 
-Docker · GitHub Actions · CI/CD · Vercel · Render · Cloudflare · Sentry · OpenTelemetry · Load Testing (k6) · Vitest · Jest · pytest · Playwright · pgTAP · CodeQL · OWASP ZAP · Trivy · SBOM · Supply-Chain Security
+Docker · AWS (S3, EC2 Auto Scaling, ECR, CloudWatch) · GitHub Actions · CI/CD · Vercel · Render · Cloudflare · Sentry · OpenTelemetry · Load Testing (k6) · Vitest · Jest · pytest · Playwright · pgTAP · CodeQL · Semgrep · Gitleaks · OWASP ZAP · Trivy · SBOM · Supply-Chain Security
 
 ---
 
