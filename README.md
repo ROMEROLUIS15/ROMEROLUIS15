@@ -12,13 +12,14 @@ I build backend for a software company in Texas (United States), while also buil
 
 ## Backend Developer — Complexity (Texas, United States)
 
-Project Factory: backend of a B2B company-directory platform with a mobile app and an admin panel. REST API, real time over WebSockets, job queues and full-text search (Node.js · NestJS · TypeScript · PostgreSQL · Redis · Elasticsearch · AWS). Private codebase.
+Project Factory: backend of a B2B company-directory platform and of its admin panel, with a mobile app. REST API, real time over WebSockets, job queues, full-text search and AI agents (Node.js · NestJS · TypeScript · PostgreSQL · Redis/BullMQ · Elasticsearch · AWS). Private codebase.
 
-- **Setting the backend's direction.** Audited the backend when I joined, presented the findings to the team and got my remediation plan approved, which I now lead without pausing the roadmap: removed improper coupling between modules, cut circular dependencies from 31 to 2 and moved business logic into 211 use cases on a hexagonal architecture.
-- **Planning and delivery on an agent harness.** Planned the backend in 500+ tickets and delivered it at a high pace: 790+ pull requests merged and 13 production deployments in two months, on an AI agent harness I designed (Orca, Gentle AI, MCP, Spec-Driven Development), reviewing and approving every change.
-- **Quality and security pipeline, from scratch.** When I joined, no pull request ran any tests; today every change goes through strict typing, unit and integration tests, security scanning (SAST/SCA, secrets) and architecture rules, with end-to-end tests in the pipeline (~5 min, zero known failures). Unit tests: from 20 to 594 suites (almost 30x).
-- **Go-to-market, end to end.** Led "claim your company", the product's go-to-market (GTM) program: claims backend and admin panel backend, with verification through corporate email. Also delivered the Resend integration (every sign-up becomes a contact through a queue that never breaks registration; I migrated and repaired the existing ones in production), orders on a state machine that holds up under simultaneous actions, and product search on Elasticsearch that never shows withdrawn products.
-- **Security and operations.** Resolved an urgent personal-data exposure report in under 4 hours, added rate limiting with Redis and declared access control on every endpoint, and protected the production deploy on AWS with a health check that stops any release that does not respond.
+- **Setting the backend's direction.** Audited the backend when I joined, presented the findings to the team and got my remediation plan approved, which I led to completion without pausing the roadmap: through incremental refactoring, removed improper coupling between modules, cut circular dependencies from 31 to 0 and moved business logic into 330 use cases on a hexagonal architecture.
+- **Agent harness and delivery.** Designed the AI agent harness I work with: numbered rules that the code itself cites, architecture and quality gates, and a check that asks for evidence behind every claim the agent makes (Orca, Gentle AI, MCP, Spec-Driven Development). With it I planned the work in 700+ tickets and delivered 1,050+ merged pull requests and 20+ production releases in three months, reviewing and approving every change.
+- **Quality and security pipeline, from scratch.** When I joined, no pull request ran any tests. Today every change goes through strict typing, unit, integration and end-to-end tests, security scanning (SAST/SCA, secrets) and architecture rules, and a full PR is validated in ~6 min. Unit tests grew from 20 to 1,000+ suites. The quality check dropped from 9.4 to 3.8 min through parallel execution and integration suites selected from the dependency graph.
+- **Go-to-market backend, end to end.** Led the backend of "claim your company" end to end, the product's go-to-market (GTM) program, now in production and fed by an AI-assisted loading flow I took to production: an agent builds company profiles and product drafts that nobody publishes without human approval. I also delivered the Resend integration, orders on a state machine and search on Elasticsearch.
+- **AI extraction engine.** Designed and built an AI extraction engine with current agent-engineering practices: every value carries the quote from its source, two models must agree and code, not the model, decides what gets stored; quality is measured with evals against the human reviewer's decision and traces in Langfuse. It nearly tripled category classification precision.
+- **Security and operations.** Took PostgreSQL row-level security (RLS) to production: from 0 to 63 enforced tables in three reversible waves, with pgTAP tests that block the merge. Resolved an urgent personal-data exposure report in under 4 hours, added rate limiting with Redis and operated AWS deployments (EC2, CloudWatch, Secrets Manager), closing two production incidents in under an hour.
 
 ---
 
@@ -38,14 +39,16 @@ Project Factory: backend of a B2B company-directory platform with a mobile app a
 
 ## CRONIX
 
-Multi-tenant SaaS platform for service businesses, with AI-powered appointment management over WhatsApp and voice.
+Multi-tenant SaaS platform for service businesses, with AI-powered appointment management over WhatsApp messages, calls and voice.
 
 ### Highlights
 
 - Built and operate the platform end-to-end: database architecture, backend services, AI systems, infrastructure, deployment, and monitoring.
 - Developed a custom AI orchestration engine (no framework) for WhatsApp and Voice AI agents using Groq, Deepgram, restricted tool calling, and autonomous scheduling workflows.
 - Implemented a deterministic anti-hallucination architecture that stops the agent from inventing data or acting on the wrong customer during appointment and payment operations.
-- Built an evaluation and observability layer: LLM-as-judge regression evals that block CI, plus per-business tracing with p50/p95 latency.
+- Built an evaluation and observability layer: golden-conversation regression evals that block CI, LLM-as-judge evals with DeepEval, plus per-business tracing with p50/p95 latency.
+- Built a real-time call agent that answers over WhatsApp and books appointments in Cronix by voice (Python, Pipecat Flows, WebRTC, Deepgram): the model talks and code decides every fact and every write, including the caller's confirmation. On Cronix's side, a signed API (HMAC) with idempotency and a lock that prevents booking the same slot twice.
+- Chose the call agent's model by measurement, not intuition: on the golden dataset it scored 1.00 on inventing nothing and on no unrequested writes, the first token arrives in 391 ms (p50) and every call is traced in Sentry with its latency and cost.
 - Audited multi-tenant isolation until it broke: found and closed a cross-tenant leak in 13 SECURITY DEFINER functions, backed by PostgreSQL Row-Level Security and 147 automated security tests (pgTAP).
 - Integrated PayPal, NOWPayments, Binance, and local payment methods with idempotent, webhook-driven fulfillment.
 - Production-grade quality pipeline: 1,600+ automated tests, CI/CD, monitoring, and Spec-Driven Development.
@@ -131,11 +134,11 @@ TypeScript · Node.js · Python · Express · NestJS · FastAPI · PostgreSQL ·
 
 ### Harness Engineering & AI-Assisted Development
 
-Orca (ADE) · Gentle AI · Engram (persistent agent memory) · MCP (Linear, Sentry, AWS, Resend, Figma) · Multi-agent orchestration · Subagents · Agent hooks & skills · Context Engineering · Human review · CI quality checks
+Claude Code (Anthropic) · Codex (OpenAI) · Orca (ADE) · Gentle AI · Engram (persistent agent memory) · MCP (Linear, Sentry, AWS, Resend, Figma) · Multi-agent orchestration · Subagents · Agent hooks & skills · Context Engineering · Human review · CI quality checks
 
 ### AI & LLM Systems
 
-AI Agents · LangGraph · Multi-Agent Orchestration · RAG · Semantic Search · Tool Calling · Function Calling · pgvector · LLM Evaluation (DeepEval) · LLM Observability (LangSmith) · Anti-Hallucination · Groq · DeepSeek · Gemini · Deepgram · MCP · Voice AI
+AI Agents · LangGraph · Multi-Agent Orchestration · RAG · Semantic Search · Tool Calling · Function Calling · pgvector · LLM Evaluation (DeepEval) · LLM Observability (LangSmith) · Anti-Hallucination · OpenAI API · OpenRouter · Groq · DeepSeek · Gemini · Deepgram · MCP · Voice AI · Pipecat · Pipecat Flows · WebRTC · Speech-to-Text · Text-to-Speech · Structured Outputs · Agentic AI
 
 ### Frontend
 
@@ -143,7 +146,7 @@ React · Next.js · TypeScript · Tailwind CSS · Progressive Web Apps (PWA)
 
 ### DevOps & Testing
 
-Docker · AWS (S3, EC2 Auto Scaling, ECR, CloudWatch) · GitHub Actions · CI/CD · Vercel · Render · Cloudflare · Sentry · OpenTelemetry · Load Testing (k6) · Vitest · Jest · pytest · Playwright · pgTAP · CodeQL · Semgrep · Gitleaks · OWASP ZAP · Trivy · SBOM · Supply-Chain Security
+Docker · AWS (S3, EC2 Auto Scaling, ECR, CloudWatch) · Git · GitHub Actions · CI/CD · Vercel · Render · Cloudflare · Sentry · OpenTelemetry · Load Testing (k6) · Vitest · Jest · pytest · Hypothesis · mypy · Ruff · Bandit · pip-audit · Playwright · pgTAP · CodeQL · Semgrep · Gitleaks · OWASP ZAP · Trivy · SBOM · Supply-Chain Security
 
 ---
 
